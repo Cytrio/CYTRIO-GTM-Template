@@ -2,4 +2,5 @@ homepage: "https://www.cytrio.com"
 documentation: "https://cytrio.com/documentation"
 versions:
   # Latest version
-  - sha: 
+  - sha: 38517b38f8ac0221b88eb128cea11a69968d19bb
+  changeNotes: Initial release
