@@ -1,0 +1,5 @@
+homepage: "https://cytrio.com"
+documentation: "https://cytrio.com/documentation"
+versions:
+  - sha: d95dbe18edc94c22affff5f5af396c0b7407b724
+    changeNotes: Initial Release
