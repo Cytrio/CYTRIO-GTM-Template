@@ -360,20 +360,7 @@ const consentStr = queryPermission('get_cookies', COOKIE_NAME) ?       getCookie
 const consent = transformToConsent(consentStr);
 
 if (typeof consent !== 'undefined') {
-    if (!regionDefaultSet) {
-       setDefaultConsentState(consent.state);
-    }
-    
-    updateConsentState({
-                'ad_storage': consent.marketing,
-                'ad_user_data': consent.marketing,
-                'ad_personalization': consent.marketing,
-                'analytics_storage': consent.analytics,
-                'functionality_storage': consent.functional,
-                'personalization_storage': consent.functional,
-                'security_storage': consent.necessary
-            });
-
+    updateConsentState(consent.state);
 }
 
 const urlPassthrough = !data.noUrlPassthrough && (!consent || consent.others.url_passthrough);
