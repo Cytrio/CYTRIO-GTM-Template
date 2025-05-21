@@ -2,8 +2,10 @@ homepage: "https://cytrio.com"
 documentation: "https://cytrio.com/documentation"
 versions:
 # Latest version
+  - sha: 22490f10c4427b97e8c0e71776e48988226e25a6
+    changeNotes: Passing consent state to updateConsentState instead of setting the flags individually
+# Older versions
   - sha: f4ee7b651ca0ac0b268a2ff9478bb3baa5b49f7c
     changeNotes: Updated template to have region default input params
-# Older versions
   - sha: 38517b38f8ac0221b88eb128cea11a69968d19bb
     changeNotes: Initial Release
