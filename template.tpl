@@ -344,7 +344,17 @@ if (regions !== undefined) {
     setDefaultConsentState(state);
     regionDefaultSet=true;
   });
-} 
+} else {
+    setDefaultConsentState ({
+    ad_storage: "denied",
+    analytics_storage: "denied",
+    functionality_storage: "denied",
+    personalization_storage: "denied",
+    security_storage: "granted",
+    ad_user_data: "denied",
+    ad_personalization: "denied"
+  });
+}
 
 ////////////////////////////////////////////////////////////////////////
 
